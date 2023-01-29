@@ -4,7 +4,6 @@ var cors = require("cors")
 let projectCollection; 
 let http = require('http').createServer(app);
 let io = require('socket.io')(http);
-let socketPort = 8000;
 
 app.use(express.static(__dirname+'/public'))
 app.use(express.json());
